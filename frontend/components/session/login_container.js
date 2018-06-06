@@ -4,7 +4,7 @@ import Login from './login';
 
 const mapStateToProps = (state) => {
   return {
-    loggedIn: Boolean(state.session.currentUser),
+    // loggedIn: Boolean(state.session.currentUser),
     errors: state.errors.session
   };
 };
@@ -12,7 +12,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     login: formUser => dispatch(login(formUser)),
-    clearErrors: () => dispatch(clearErrors())
+    clearErrors: () => dispatch(clearErrors([]))
   };
 };
 

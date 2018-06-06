@@ -8,7 +8,7 @@ import { Route, Switch } from 'react-router-dom';
 const App = () => (
   <div>
     <header>
-      <h1>Instagram</h1>
+      
 
     </header>
 
@@ -18,7 +18,6 @@ const App = () => (
     </Switch>
 
 
-    <GreetingContainer />
 
   </div>
 );
