@@ -2,40 +2,42 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// h2 {
-//   text-align: center;
-//   font-size: 40px;
-// }
+h1 {
+  text-align: center;
+  font-family: "Pacifico"
+}
 //
 .image {
-  width: 370px;
+  width: 390px;
   height: 350px;
   background-image: image-url("computer-screen.png");
   background-repeat: no-repeat;
-
+  background-position: center;
 }
-//
+
 .login-form-div {
   // width: 350px;
   // height: 375px;
-  // position: absolute;
+  // position: sticky;
   display: flex;
-  position: relative;
-  // top: 80px;
-  // left: 750px;
+  position: absolute;
 
 }
-//
-// .login-form-btn {
-//   background-color: #369AF2;
-//   color: white;
-//   font-size: 14px;
-//   font-weight: bold;
-//   border-radius: 5px;
-//   width: 200px;
-//   height: 25px;
-// }
-//
+
+.login-form button {
+  background-color: #369AF2;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 3px;
+  width: 250px;
+  height: 25px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #369AF2;
+
+}
+
 .login-form {
   background-color: white;
   border: 1px solid lightgrey;
@@ -43,11 +45,31 @@
   height: 375px;
   text-align: center;
 }
-//
-// .errors {
-//   color: red;
-//   list-style: none;
-//   margin: 0;
-//   padding: 0;
-//   text-align: center;
-// }
+
+.errors {
+  color: red;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-form input {
+  margin: 5px;
+  background-color: #F7F5F5;
+  color: grey;
+  border-radius: 3px;
+  width: 250px;
+  height: 25px;
+  // padding: 8px;
+  border: 1px solid lightgrey;
+  
+}
+
+
+p {
+  color: grey;
+  // border-top: 1px solid grey;
+
+}

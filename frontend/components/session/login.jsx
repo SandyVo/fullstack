@@ -53,11 +53,11 @@ class Login extends React.Component {
         </div>
         <div>
           <form className="login-form">
-            <h2>Instagram</h2>
+            <h1>Instapix</h1>
             <label className="login-form-top-label">
               <input
                 type="text"
-                value={this.state.email}
+                value={this.state.username}
                 onChange={this.handleInput('username')}
                 placeholder="Username"
               />
@@ -73,7 +73,9 @@ class Login extends React.Component {
             </label>
             <br/>
             <button className="login-form-btn" onClick={this.handleSubmit}>Log In</button>
-
+            <br/>
+            <p>OR</p>
+            <button>Demo User</button>
             {this.renderErrors()}
           </form>
         </div>
