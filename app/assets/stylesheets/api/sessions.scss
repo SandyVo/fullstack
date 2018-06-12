@@ -4,7 +4,9 @@
 
 h1 {
   text-align: center;
-  font-family: "Pacifico"
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  font-weight: bold;
 }
 //
 .image {
@@ -13,16 +15,18 @@ h1 {
   background-image: image-url("computer-screen.png");
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  position: relative;
+
 }
 
 .login-form-div {
-  // width: 350px;
-  // height: 375px;
-  // position: sticky;
   display: flex;
-  position: absolute;
-
+  margin: 0 auto;
+  width: 800px;
+  margin-top: 150px;
 }
+
 
 .login-form button {
   background-color: #369AF2;
@@ -35,6 +39,7 @@ h1 {
   margin-top: 8px;
   margin-bottom: 8px;
   border: 1px solid #369AF2;
+  // text-align: center;
 
 }
 
@@ -44,6 +49,9 @@ h1 {
   width: 350px;
   height: 375px;
   text-align: center;
+  position: relative;
+
+
 }
 
 .errors {
@@ -64,7 +72,8 @@ h1 {
   height: 25px;
   // padding: 8px;
   border: 1px solid lightgrey;
-  
+
+
 }
 
 
@@ -72,4 +81,18 @@ p {
   color: grey;
   // border-top: 1px solid grey;
 
+}
+
+.sign-up-link {
+  border: 1px solid lightgrey;
+  background-color: white;
+  text-align: center;
+  // display: inline-block;
+
+}
+
+.sign-up-link p{
+  color: black;
+  font-family: sans-serif;
+  font-size: 14px;
 }

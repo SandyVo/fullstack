@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 class Login extends React.Component {
@@ -78,6 +79,10 @@ class Login extends React.Component {
             <button>Demo User</button>
             {this.renderErrors()}
           </form>
+          <div className="sign-up-link">
+            <p>Don't have an account?</p>
+            <button>Sign Up</button>
+          </div>
         </div>
       </div>
     );
