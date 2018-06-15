@@ -75,13 +75,12 @@ class Login extends React.Component {
             <br/>
             <button className="login-form-btn" onClick={this.handleSubmit}>Log In</button>
             <br/>
-            <p>OR</p>
+            <div className="or-label">OR</div>
             <button>Demo User</button>
             {this.renderErrors()}
           </form>
           <div className="sign-up-link">
-            <p>Don't have an account?</p>
-            <button>Sign Up</button>
+            <p>Don't have an account? <Link to="/signup">Sign up</Link></p>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class Signup extends React.Component {
   constructor(props) {
@@ -44,10 +45,13 @@ class Signup extends React.Component {
   render() {
     return (
       <div className="signup-form-div">
-        <h2>Sign up and see photos and</h2>
-        <h2>videos from your friends.</h2>
-        {this.renderErrors()}
+        <h1>Instapix</h1>
         <form className="signup-form">
+          <h2>Sign up and see photos and videos from your friends.</h2>
+          <div className="demo-login">
+            <button>Sign in as Demo User</button>
+          </div>
+          <div className="or-label">OR</div>
           <label>
             <input
               type="text"
@@ -85,7 +89,12 @@ class Signup extends React.Component {
           </label>
           <br/>
           <button className="signup-btn" onClick={this.handleSubmit}>Sign Up</button>
+          {this.renderErrors()}
+          <div className="login-link">
+            <p>Have an account? <Link to="/login">Log in</Link></p>
+          </div>
         </form>
+        
       </div>
     );
   }
